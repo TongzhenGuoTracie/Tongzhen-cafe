@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>All Nice Cafes</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/a.css">
+  <style>
+    * {
+      color: #443700;
+      font-family: "Cochin", serif;
+    }
+  </style>
+</head>
+<body>
+<!-- navigation start   -->
+<div class="up-nav">
+  <div class="warp">
+    <ul class="up-nav-left">
+      <li>All Nice Cafes<span> </span></li>
+    </ul>
+    <ul class="up-nav-right">
+      <li><a href="index.html">Home</a><span> </span></li>
+      <li><a href="classification.html">Classification</a><span> </span></li>
+      <li><a href="review.html">Review</a><span> </span></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="left-bottom">
+    <span>CAFE</span>
+  </div>
+  <!--  Attract more viewers to my website by rotating pictures of beautiful cafes on the homepage.  -->
+  <div class="img-slide img1">
+    <div class="picture1">
+      <img src="picture/a1.jpg" width="430px" alt="">
+    </div>
+    <div class="picture2">
+      <img src="picture/a2.jpg" width="220px" alt="">
+    </div>
+    <div class="picture3">
+      <img src="picture/a3.jpg" width="220px" alt="">
+    </div>
+  </div>
+  <div class="img-slide img2">
+    <div class="picture1">
+      <img src="picture/b1.jpg" width="430px" alt="">
+    </div>
+    <div class="picture2">
+      <img src="picture/b2.jpg" width="220px" alt="">
+    </div>
+    <div class="picture3">
+      <img src="picture/b3.jpg" width="220px" alt="">
+    </div>
+  </div>
+  <div class="img-slide img3">
+    <div class="picture1">
+      <img src="picture/c1.jpg" width="430px" alt="">
+    </div>
+    <div class="picture2">
+      <img src="picture/c2.jpg" width="220px" alt="">
+    </div>
+    <div class="picture3">
+      <img src="picture/c3.jpg" width="220px" alt="">
+    </div>
+  </div>
+  <div class="img-slide img4">
+    <div class="picture1">
+      <img src="picture/d1.jpg" width="430px" alt="">
+    </div>
+    <div class="picture2">
+      <img src="picture/d2.jpg" width="220px" alt="">
+    </div>
+    <div class="picture3">
+      <img src="picture/d3.jpg" width="220px" alt="">
+    </div>
+  </div>
+</div>
+<!-- navigation end -->
+<!-- body start -->
+<div class="down-nav">
+  <div class="one">
+    <span>ARCHIVE</span>
+  </div>
+  <div class="two">
+    <span>Collect all the beautiful cafes</span><span>.</span>
+  </div>
+  <div class="three">
+    <canvas id="myCanvas" width="400" height="150"></canvas>
+    <script>const canvas = document.getElementById("myCanvas");
+    const context = canvas.getContext("2d");
+    const centerX = canvas.width / 3;
+    const centerY = canvas.height / 3;
+    const radiusX = 120;
+    const radiusY = 40;
+    context.beginPath();
+    context.lineWidth = 2;
+    context.ellipse(centerX, centerY, radiusX, radiusY, 0, 0, 2 * Math.PI);
+    context.stroke();
+    </script>
+  </div>
+  <div class="four">
+    <a href="classification.html">view more</a>
+  </div>
+  <div class="five">
+  <textarea rows="4" cols="60" disabled>It is made for cafe enthusiasts who appreciate beautifully decorated cafes. Hope you can find a satisfying coffee shop. Each cafe also offers unique beverages and exquisite desserts. They are perfect for taking beautiful photos.</textarea>
+</div>
+</div>
+<!-- body end -->
+</body>
+<script type="text/javascript">
+  var index = 0;
+
+  function ChangeImg() {
+    index++;
+    var a = document.getElementsByClassName("img-slide");
+    if (index >= a.length) index = 0;
+    for (var i = 0; i < a.length; i++) {
+      a[i].style.display = 'none';
+    }
+    a[index].style.display = 'block';
+  }
+
+  //Set a timer to switch images every 2 seconds.
+  setInterval(ChangeImg, 2000);
+</script>
+</html>

@@ -1,0 +1,79 @@
+/*   navigation start     */
+.up-nav {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #f6efe1;
+  font-size: 30px;
+  font-family: "Cochin";
+  background-image: none;
+}
+
+.up-nav .warp {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.up-nav .warp .up-nav-left {
+  float: left;
+}
+
+.up-nav .warp .up-nav-right {
+  float: right;
+}
+
+.up-nav .warp li {
+  float: left;
+}
+
+
+.up-nav .warp li span {
+  color: #C81623;
+  margin: 0 40px;
+}
+
+/*    navigation end      */
+
+.down-nav {
+  width: 100%;
+  height: 950px;
+  background-color: #faf9f5;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.word1 {
+  font-size: 80px;
+  top: 100px;
+  position: relative;
+  font-family: "Copperplate";
+}
+
+.word2 {
+  font-size: 40px;
+  top: 150px;
+  position: relative;
+}
+
+.word3 {
+  font-size: 30px;
+  top: 190px;
+  position: relative;
+}
+
+.word4 {
+  font-size: 30px;
+  top: 230px;
+  position: relative;
+}
+
+textarea {
+  position: relative;
+  font-size: 20px;
+  left: 30px;
+  top: 255px;
+  border: none;
+  background-color: #faf9f5;
+}
+
